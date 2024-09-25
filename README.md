@@ -83,72 +83,72 @@ Aqui na imagem vc pode visualizar todas as tabelas no banco de dados que seram c
 
 ## Instalação e Configuração
 
-**Clone o repositório**:
-```bash
-git clone https://github.com/seu-repositorio/sistema-gerenciamento-escola.git
-```
-**Configuração do banco de dados**:
+1. **Clone o repositório**:
+    ```bash
+    git clone https://github.com/seu-repositorio/sistema-gerenciamento-escola.git
+    ```
+2. **Configuração do banco de dados**:
 
-- Crie um banco de dados PostgreSQL ou outros.
-- Configure as credenciais de acesso ao banco no arquivo application.properties ou application.yml
+    - Crie um banco de dados PostgreSQL ou outros.
+    - Configure as credenciais de acesso ao banco no arquivo application.properties ou application.yml
 
-```bash
-spring.datasource.url=jdbc:postgresql://localhost:5432/nome_do_banco
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
-spring.jpa.hibernate.ddl-auto=update
-```
+        ```bash
+        spring.datasource.url=jdbc:postgresql://localhost:5432/nome_do_banco
+        spring.datasource.username=seu_usuario
+        spring.datasource.password=sua_senha
+        spring.jpa.hibernate.ddl-auto=update
+        ```
 
-**Instalação das dependências**:
+3. **Instalação das dependências**:
 
-- Se estiver usando Maven:
+    - Se estiver usando Maven:
 
-```bash
-mvn clean install
-```
+        ```bash
+        mvn clean install
+        ```
 
-- Se estiver usando Gradle:
+    - Se estiver usando Gradle:
 
-```bash
-gradle build
-```
+        ```bash
+        gradle build
+        ```
 
 ## Execução do Projeto
 
-**Rodando a aplicação:**
+1. **Rodando a aplicação:**
 
-- Se estiver usando Maven:
+    - Se estiver usando Maven:
 
-```bash
-mvn spring-boot:run
-```
+        ```bash
+        mvn spring-boot:run
+        ```
 
-- Se estiver usando Gradle:
+    - Se estiver usando Gradle:
 
-```bash
-gradle bootRun
-```
+        ```bash
+        gradle bootRun
+        ```
 
-**Acessando a aplicação:**
+2. **Acessando a aplicação:**
 
-<br>
-<div style="display: inline_block" align="center">
+    <br>
+    <div style="display: inline_block" align="center">
 
-<img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" />
+    <img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" />
 
-</div>
-<br>
+    </div>
+    <br>
 
-- A aplicação estará rodando em http://localhost:8080 por padrão, OBS :. veeja see na aplicacao nao ah alguma alteracao de porta padrao a ser rodada na aplicacao.
+    - A aplicação estará rodando em http://localhost:8080 por padrão, OBS :. veeja see na aplicacao nao ah alguma alteracao de porta padrao a ser rodada na aplicacao.
 
-**Testando as rotas da API:**
+3. **Testando as rotas da API:**
 
-<br>
-<div style="display: inline_block" align="center">
+    <br>
+    <div style="display: inline_block" align="center">
 
-<img width="100" src="https://skillicons.dev/icons?i=postman">
+    <img width="100" src="https://skillicons.dev/icons?i=postman">
 
-</div>
-<br>
+    </div>
+    <br>
 
-- Utilize o Postman para testar as requisições como GET, POST, PUT e DELETE.
+    - Utilize o Postman para testar as requisições como GET, POST, PUT e DELETE.
