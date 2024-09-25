@@ -2,9 +2,38 @@
 
 Este Sistema ficara responsavel por ajudar na administracao de aulas quee sera feita por por alunos e turmas de uma escola do ensino fundamental e medio.
 
+## Índice
 
-## Diagrama de Classes para o projeto
+- [Tecnologias e Ferramentas Utilizadas](#tecnologias-e-ferramentas-utilizadas)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação e Configuração](#instalação-e-configuração)
+- [Execução do Projeto](#execução-do-projeto)
 
+## Tecnologias e Ferramentas Utilizadas
+
+<br>
+<div style="display: inline_block" align="center">
+
+<img width="100" src="https://skillicons.dev/icons?i=java">
+<img width="100" src="https://skillicons.dev/icons?i=spring">
+<img width="100" alt="Spring" width="120" src="https://skillicons.dev/icons?i=hibernate">
+<img width="100" src="https://skillicons.dev/icons?i=postgres">
+<img width="100" src="https://skillicons.dev/icons?i=postman">
+
+</div>
+<br>
+
+- ***Linguagem:*** Java
+
+- ***Fremework:*** Spring-Boot 
+
+- ***Banco de Dados:*** PostgreSQL 
+
+- ***ORM:*** Hibernate
+
+- ***Teste De Rotas:*** Postman 
+## Estrutura do Projeto
 
 <div align="center" style="display: inline_block">
 <img  alt="java" width="700" src="./images/image.png">
@@ -14,24 +43,112 @@ Este Sistema ficara responsavel por ajudar na administracao de aulas quee sera f
 
 Aqui na imagem vc pode visualizar todas as tabelas no banco de dados que seram ciradas via ORM/Hibernate.JPA que foi utilizada na aplicacao 
 
-## Tecnologias a Ser usada na aplicacao
+## Pré-requisitos
+
+é necessário garantir que seu ambiente de desenvolvimento esteja configurado adequadamente. Aqui estão os principais pré-requisitos:
 
 <br>
 <div style="display: inline_block" align="center">
 
-<img  alt="Spring" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
-<img  alt="hibernate" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hibernate/hibernate-original.svg
-">
-<img  alt="PostgreSQL" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg">
-<img  alt="Postman" width="120" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg">
+<img width="100" src="https://skillicons.dev/icons?i=java">
+<img width="100" src="https://skillicons.dev/icons?i=maven">
+<img width="100" src="https://skillicons.dev/icons?i=gradle">
+<img width="100" src="https://skillicons.dev/icons?i=mysql">
 
 </div>
 <br>
 
-- ***Fremework:*** Spring-Boot 
+- Java Development Kit (JDK): ***versão 8*** ou superior como a ***JDK 11*** recomendada pela documentacao
 
-- ***Banco de Dados:*** PostgreSQL 
+- Maven ou Gradle: ferramentas de ***build*** para gerenciar ***dependências*** e criar artefatos da aplicação.
 
-- ***ORM:*** Hibernate
+- Banco de Dados (SQL or NoSQL): Certifique-se de que o ***PostgreSQL*** ou outros se ja estam instalados e configurados corretamente.
 
-- ***Teste De Rotas:*** Postman 
+#### IDE (Ambiente de Desenvolvimento Integrado):
+
+<br>
+<div style="display: inline_block" align="center">
+
+<img width="100" src="https://skillicons.dev/icons?i=vscode">
+<img width="100" src="https://skillicons.dev/icons?i=eclipse">
+<img width="100" src="https://skillicons.dev/icons?i=idea">
+
+</div>
+<br>
+
+ - ***IntelliJ IDEA*** (com o plugin Spring Boot integrado).
+ - ***Eclipse*** (com o plugin Spring Tools Suite - STS).
+ - ***VS Code*** (com extensões para Java e Spring Boot)
+
+
+## Instalação e Configuração
+
+**Clone o repositório**:
+```bash
+git clone https://github.com/seu-repositorio/sistema-gerenciamento-escola.git
+```
+**Configuração do banco de dados**:
+
+- Crie um banco de dados PostgreSQL ou outros.
+- Configure as credenciais de acesso ao banco no arquivo application.properties ou application.yml
+
+```bash
+spring.datasource.url=jdbc:postgresql://localhost:5432/nome_do_banco
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+spring.jpa.hibernate.ddl-auto=update
+```
+
+**Instalação das dependências**:
+
+- Se estiver usando Maven:
+
+```bash
+mvn clean install
+```
+
+- Se estiver usando Gradle:
+
+```bash
+gradle build
+```
+
+## Execução do Projeto
+
+**Rodando a aplicação:**
+
+- Se estiver usando Maven:
+
+```bash
+mvn spring-boot:run
+```
+
+- Se estiver usando Gradle:
+
+```bash
+gradle bootRun
+```
+
+**Acessando a aplicação:**
+
+<br>
+<div style="display: inline_block" align="center">
+
+<img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" />
+
+</div>
+<br>
+
+- A aplicação estará rodando em http://localhost:8080 por padrão, OBS :. veeja see na aplicacao nao ah alguma alteracao de porta padrao a ser rodada na aplicacao.
+
+**Testando as rotas da API:**
+
+<br>
+<div style="display: inline_block" align="center">
+
+<img width="100" src="https://skillicons.dev/icons?i=postman">
+
+</div>
+<br>
+
+- Utilize o Postman para testar as requisições como GET, POST, PUT e DELETE.
