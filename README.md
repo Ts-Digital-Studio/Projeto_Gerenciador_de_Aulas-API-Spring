@@ -6,6 +6,7 @@ Este Sistema ficara responsavel por ajudar na administracao de aulas quee sera f
 
 - [Tecnologias e Ferramentas Utilizadas](#tecnologias-e-ferramentas-utilizadas)
 - [Estrutura do Projeto](#estrutura-do-projeto)
+- [Docs da Aplicacao](#Docs-da-Aplicacao)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação e Configuração](#instalação-e-configuração)
 - [Execução do Projeto](#execução-do-projeto)
@@ -42,6 +43,16 @@ Este Sistema ficara responsavel por ajudar na administracao de aulas quee sera f
 <br>
 
 Aqui na imagem vc pode visualizar todas as tabelas no banco de dados que seram ciradas via ORM/Hibernate.JPA que foi utilizada na aplicacao 
+
+## Docs da Aplicacao 
+
+para visualizar algumas rotas, no caso todas as rotas existentes na aplicacao vc pode se conectar mais entender mais cada funcionalidade da aplicacao.
+
+- se for roda aplicacao de forma local:
+
+    ```bash
+    http://localhost:8080/swagger-ui/index.html#/
+    ```
 
 ## Pré-requisitos
 

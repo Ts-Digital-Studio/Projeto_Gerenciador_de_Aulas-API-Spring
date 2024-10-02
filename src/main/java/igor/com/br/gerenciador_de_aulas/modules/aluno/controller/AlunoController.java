@@ -1,4 +1,4 @@
-package igor.com.br.gerenciador_de_aulas.modules.controllers;
+package igor.com.br.gerenciador_de_aulas.modules.aluno.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

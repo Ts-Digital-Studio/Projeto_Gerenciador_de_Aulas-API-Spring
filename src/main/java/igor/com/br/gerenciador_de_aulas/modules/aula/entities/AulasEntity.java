@@ -1,10 +1,13 @@
-package igor.com.br.gerenciador_de_aulas.modules.entities;
+package igor.com.br.gerenciador_de_aulas.modules.aula.entities;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import igor.com.br.gerenciador_de_aulas.modules.disciplina.entities.DisciplinaEntity;
+import igor.com.br.gerenciador_de_aulas.modules.professor.entities.ProfessorEntity;
+import igor.com.br.gerenciador_de_aulas.modules.turma.entities.TurmaEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

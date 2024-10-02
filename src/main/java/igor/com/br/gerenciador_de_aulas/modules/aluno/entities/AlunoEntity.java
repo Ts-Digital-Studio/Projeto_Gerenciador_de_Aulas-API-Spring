@@ -1,38 +1,39 @@
-package igor.com.br.gerenciador_de_aulas.modules.entities;
+package igor.com.br.gerenciador_de_aulas.modules.aluno.entities;
 
 import java.time.LocalDateTime;
-import java.util.Set;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import igor.com.br.gerenciador_de_aulas.modules.turma.entities.TurmaEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Entity
 @Data
-public class TurmaEntity {
-
+public class AlunoEntity {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID id_matricula;
 
     @NotBlank
-    private String sigla;
+    private String nome;
 
     @NotBlank
-    private String tipo;
+    private String email;
 
-    @NotBlank
-    private int ano; 
+    private int cep;
 
-    @OneToMany(mappedBy = "turmaEntity")
-    private Set<AlunoEntity> alunos;
+    @ManyToOne
+    @JoinColumn(name = "turma_id")
+    private TurmaEntity turmaEntity;
 
     @CreationTimestamp
     private LocalDateTime dataDeCriacao;

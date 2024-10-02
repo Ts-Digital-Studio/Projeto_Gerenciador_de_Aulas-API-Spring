@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+## database
+src/main/java/igor/com/br/gerenciador_de_aulas/database/*.db

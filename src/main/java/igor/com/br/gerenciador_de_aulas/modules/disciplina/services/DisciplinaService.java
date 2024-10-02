@@ -1,4 +1,4 @@
-package igor.com.br.gerenciador_de_aulas.modules.services;
+package igor.com.br.gerenciador_de_aulas.modules.disciplina.services;
 
 import org.springframework.stereotype.Service;
 

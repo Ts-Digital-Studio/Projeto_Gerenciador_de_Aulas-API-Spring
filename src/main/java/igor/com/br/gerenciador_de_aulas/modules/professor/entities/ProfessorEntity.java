@@ -1,4 +1,4 @@
-package igor.com.br.gerenciador_de_aulas.modules.entities;
+package igor.com.br.gerenciador_de_aulas.modules.professor.entities;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -9,27 +9,24 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Entity
 @Data
-public class DisciplinaEntity {
+public class ProfessorEntity {
     
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    private UUID id_matricula; 
 
+    @NotBlank
     private String nome; 
-    
-    private int cargaHoraria;
 
-    private String assuntos;
+    @NotBlank
+    private String email;
 
-    @ManyToOne
-    @JoinColumn(name = "professor_id")
-    private ProfessorEntity professorEntity;
+    private int salario;
 
     @CreationTimestamp
     private LocalDateTime dataDeCriacao;
