@@ -163,3 +163,8 @@ para visualizar algumas rotas, no caso todas as rotas existentes na aplicacao vc
     <br>
 
     - Utilize o Postman para testar as requisições como GET, POST, PUT e DELETE.
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
+
