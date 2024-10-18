@@ -1,4 +1,4 @@
-package igor.com.br.gerenciador_de_aulas.modules.turma.entities;
+package igor.com.br.gerenciador_de_aulas.modules.dto;
 
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import igor.com.br.gerenciador_de_aulas.modules.aluno.entities.AlunoEntity;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +17,7 @@ import lombok.Data;
 
 @Entity
 @Data
+@Schema(description = "Representa as turmas na escola")
 public class TurmaEntity {
 
     @Id

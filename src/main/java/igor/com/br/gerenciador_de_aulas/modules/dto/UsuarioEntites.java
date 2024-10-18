@@ -1,10 +1,8 @@
-package igor.com.br.gerenciador_de_aulas.modules.professor.entities;
+package igor.com.br.gerenciador_de_aulas.modules.dto;
 
-import java.time.LocalDateTime;
 import java.util.UUID;
 
-import org.hibernate.annotations.CreationTimestamp;
-
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,20 +12,25 @@ import lombok.Data;
 
 @Entity
 @Data
-public class ProfessorEntity {
+@Schema(description = "Representa os usuários")
+public class UsuarioEntites {
     
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id_matricula; 
+    private UUID id;
 
     @NotBlank
-    private String nome; 
+    private String nome;
+
+    @NotBlank
+    private String cpf;
 
     @NotBlank
     private String email;
 
-    private int salario;
+    @NotBlank
+    private String telefone;
 
-    @CreationTimestamp
-    private LocalDateTime dataDeCriacao;
+    @NotBlank
+    private String endereco;
 }

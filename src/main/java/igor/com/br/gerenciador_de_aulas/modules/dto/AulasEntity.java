@@ -1,13 +1,11 @@
-package igor.com.br.gerenciador_de_aulas.modules.aula.entities;
+package igor.com.br.gerenciador_de_aulas.modules.dto;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import igor.com.br.gerenciador_de_aulas.modules.disciplina.entities.DisciplinaEntity;
-import igor.com.br.gerenciador_de_aulas.modules.professor.entities.ProfessorEntity;
-import igor.com.br.gerenciador_de_aulas.modules.turma.entities.TurmaEntity;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,6 +17,7 @@ import lombok.Data;
 
 @Entity
 @Data
+@Schema(description = "Representa as aulas")
 public class AulasEntity {
 
     @Id
